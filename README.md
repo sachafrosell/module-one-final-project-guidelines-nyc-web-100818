@@ -55,3 +55,11 @@ Projects need to be approved prior to launching into them, so take some time to 
 # in config/environment.rb add this line:
 ActiveRecord::Base.logger = nil
 ```
+
+Description.
+
+This CLI allows you to search for the top 3 events in your local area based on your provided zip code from the eventful API. Users are given a short breakdown of the 3 events and are given the choice to view one of them in more detail. Once a selection is made, the program accesses the Google maps API in order to provide travel time to the selected venue. The user is then given a choice to see the event page on eventful, to get directions from google maps (multiple transit options are given), or to view the top video results for the performer(s) on youtube. Once selected the program is restarted.
+
+INSTALL INSTRUCTIONS.
+
+In order to run this program you must do a "bundle install" in your terminal to gain access to all of the gems used. An API key, oauth_token and oauth_secret for eventful must be created here: http://api.eventful.com/keys, and an API key for google must be created here: http://cloud.google.com. Once you have these they should be saved in the correct variables in the environment file. Run this program using the run.rb file.
